@@ -104,6 +104,13 @@ print("Welcome to the IAPG2. Links are fetched to tracks in genres you choose.")
 
 print("")
 
+subcoll = input("Please enter the collection: ")
+
+print("")
+
+if not subcoll:
+    subcoll = 'netlabels'
+
 suba = input("Please enter the first genre: ")
 
 print("")
@@ -118,7 +125,7 @@ print("")
 
 if suba and subb:
 
-    collur = 'https://archive.org/details/netlabels?query=' + suba + '%2C+' + subb
+    collur = 'https://archive.org/details/' + subcoll + '?query=' + suba + '%2C+' + subb + 'sort=-week'
 
 if suba and not subb:
 
