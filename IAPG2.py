@@ -174,7 +174,7 @@ for elem in totlst:
 print("")
 print(trklist)
 
-oufil = 'IAPG2' + suba + "_" + subb + '_' + tim + ".m3u"
+oufil = 'IAPG2_' + suba + "_" + subb + '_' + tim + ".m3u"
 
 outfile = open(oufil, "w")
 
